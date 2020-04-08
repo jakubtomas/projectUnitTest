@@ -2,11 +2,11 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class classMyMath {
+public class MyMath {
 
     // input number  isPrimeNumber
 
-    public static boolean isPrimeNumber(int number ) {
+    public   boolean isPrimeNumber(int number ) {
 
         int temp;
         boolean isPrime = true;
@@ -21,16 +21,11 @@ public class classMyMath {
         }
         return isPrime;
 
-
-        //If isPrime is true then the number is prime else not
-        //System.out.println(number + " is a Prime Number");
-        //    System.out.println(number + " is not a Prime Number");
-        //return true;
     }
 
     // input array return the minimum value
 
-    public static  int  min(int[] arr) {
+    public   int  min(int[] arr) {
 
         ArrayList<Integer> numberArray = new ArrayList<Integer>();
 
@@ -49,8 +44,10 @@ public class classMyMath {
 
     // trojuholnikova nerovnost  is possible
 
+        ///
+    public boolean existTriangle(int a, int b, int c) {
 
-    public static boolean existTriangle(int a, int b, int c) {
+
 
         if (a + b <= c || a + c <= b || b + c <= a)
             return false;
